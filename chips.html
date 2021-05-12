@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/043568be29.js" crossorigin="anonymous"></script>
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Chips</title>
+</head>
+<body class="amber lighten-4">
+
+    <div class="container">
+        <h1 class="grey-text">Chips</h1>
+
+        <!--Chips-->
+        <div class="chip">WEb Development</div>
+        <div class="chip">Creative Web Design</div>
+        <div class="chip">Proramming</div>
+
+        <br><br>
+
+        <!--Chips with close-->
+        <div class="chip">Web Development
+            <i class="material-icons close">close</i>
+        </div>
+        <div class="chip green black-text">Creative Web Design
+            <i class="material-icons close">close</i>
+        </div>
+
+        <br><br>
+
+        <!--Chips with Image-->
+        <div class="chip">Pizza
+            <img src="images/pizza.jpg" alt="">
+        </div>
+        <div class="chip green black-text">Creative Web Design
+            <img src="images/pancake.jpg" alt="">
+        </div>
+
+
+        <!--Chips input Autocomplete -->
+        <div class="chips chips-autocomplete"></div>
+
+    
+
+        <!--End of conttainer-->
+    </div>
+
+
+
+
+
+    <!--JQuery CDN-->
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+
+    <script>
+        // Or with jQuery
+        //$('.chips-placeholder').chips({
+    //placeholder: 'Enter a tag',
+    //secondaryPlaceholder: '+Tag',
+    //});
+    //$('.chips-autocomplete').chips({
+    //autocompleteOptions: {
+       // data: {
+        //'Apple': null,
+        //'Microsoft': null,
+        //'Google': null
+        //},
+        //    limit: Infinity,
+        //    minLength: 1
+        //    }
+       // });
+
+        $('.chips-placeholder').chips({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+    });
+    $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+        data: {
+        'Web Development': null,
+        'Programming': null,
+        'Creative': null
+        },
+            limit: Infinity,
+            minLength: 1
+            }
+        });
+
+    </script>
+</body>
+</html>

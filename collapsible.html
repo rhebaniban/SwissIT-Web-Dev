@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/043568be29.js" crossorigin="anonymous"></script>
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    
+    <title>Collapsible</title>
+</head>
+<body class="amber lighten-4">
+
+    <!--First-->
+    <div class="container">
+        <h1 class="gret-text tex-darken-4">Collapsible</h1>
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            </li>
+            <li>
+            <div class="collapsible-header">
+                <i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+            <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            </li>
+        </ul>
+              
+        <br><br>
+        
+        <!--Second-->
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                </li>
+                <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                </li>
+            </ul>
+
+        
+        <br><br>
+
+        <!--Third-->
+        <ul class="collapsible pop-out">
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                </li>
+                <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                </li>
+            </ul>
+
+
+
+        <!--End offff container-->
+    </div>
+    
+
+
+
+
+    <!--JQuery CDN-->
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+         $(document).ready(function(){
+        $('.collapsible').collapsible();
+
+        accordion: false
+         });
+        
+    </script>
+</body>
+</html>
